@@ -15,3 +15,7 @@ resource "azurerm_storage_account""example"{
     account_tier             = "Standard"
     account_replication_type = "LRS"
 }
+resource "azurerm_resource_group" "example" {
+  name     = "example-resources"
+  location = "eastus"
+}
